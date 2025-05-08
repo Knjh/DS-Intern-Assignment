@@ -1,0 +1,7 @@
+data_ingestion:
+  source_path: "D:/DS-Intern-Assignment/data/data.csv"   
+  output_dir: "artifacts/raw_data"
+  output_filename: "raw.csv"
+preprocessing:
+  input_path: "artifacts/raw_data/raw.csv"
+  output_path: "artifacts/processed_data/cleaned.csv"
