@@ -37,7 +37,7 @@ def handle_outliers(df, column, strategy='winsorize', lower_bound=None, upper_bo
 
     return df_result
 
-def preprocess():
+def run_preprocessing():
     config = load_config()["preprocessing"]
     input_path = config["input_path"]
     output_path = config["output_path"]

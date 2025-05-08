@@ -5,3 +5,14 @@ data_ingestion:
 preprocessing:
   input_path: "artifacts/raw_data/raw.csv"
   output_path: "artifacts/processed_data/cleaned.csv"
+data_engineering:
+  input_path: "artifacts/processed_data/cleaned.csv"
+  output_path: "artifacts/engineered_data/engineered.csv"
+model_development:
+  input_path: "artifacts/engineered_data/engineered.csv"
+  model_output_path: "artifacts/models/decision_tree_model.pkl"
+  scaler_output_path: "artifacts/models/scaler.pkl"
+model_validation:
+  input_path: "artifacts/engineered_data/engineered.csv"
+  model_path: "artifacts/models/decision_tree_model.pkl"
+  scaler_path: "artifacts/models/scaler.pkl"

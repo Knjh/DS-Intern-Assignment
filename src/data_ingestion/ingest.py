@@ -6,7 +6,7 @@ def load_config(path="src/config/config.yaml"):
     with open(path, "r") as f:
         return yaml.safe_load(f)
 
-def ingest_data():
+def run_ingestion():
     config = load_config()["data_ingestion"]
     source_path = config["source_path"]
     output_dir = config["output_dir"]
@@ -25,4 +25,4 @@ def ingest_data():
     print(f"Data successfully ingested and saved to: {output_path}")
 
 if __name__ == "__main__":
-    ingest_data()
+    run_ingestion()
